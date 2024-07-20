@@ -161,6 +161,8 @@ class Lenia{
 			this.flowShader.run(i==0,this.materials[0].geneMaxLength,display.view,this.size,display.size,m.leniaTexPP,m.veloTexPP,this.dnaTexPP,drawTex);
 		});
 		
-		this.renderShader.run(display.view,this.size,display.size,this.materials[0].leniaTexPP,this.dnaTexPP,this.gradientTexPP,imageTex);
+		if(this.size.x>1.||this.size.y>1.){
+			this.renderShader.run(display.view,this.size,display.size,this.materials[0].leniaTexPP,this.dnaTexPP,this.gradientTexPP,imageTex);
+		}
 	}
 }
