@@ -1,4 +1,4 @@
-# flow-lenia
+# Flow Lenia
 A modified implementation of Flow Lenia in WebGL.
 
 This version takes a seed image as input and constrains the simulation according to that image. The settings for the image can be found in the settings.js file.
