@@ -46,11 +46,13 @@ let canvasTex=new Texture({
 let imageTex=new Texture({
 	src: imageSrc
 });
+let time=0;
 
 let zoomBase=1.2;
 let zoomExp=0;
 let frameAnim=animate(()=>{
 	display.clear();
+	time++;
 
 	let ratio=display.size.cln().div(lenia.size);
 	let scale=Vec(

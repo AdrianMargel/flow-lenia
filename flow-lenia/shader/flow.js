@@ -142,7 +142,7 @@ class FlowShader extends FragShader{
 			updateDna,
 			rand:rand(),
 			maxLength:maxDnaLength,
-			mutationBorderWidth,
+			mutationBorderWidth:(time%mutationBorderDelay==0)?mutationBorderWidth:0,
 			mutationBorderStrength,
 		};
 		this.attachments=[
