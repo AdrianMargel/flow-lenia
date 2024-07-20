@@ -107,7 +107,7 @@ class Lenia{
 		});
 
 		const img=new Image();
-		img.src='/img/seed.jpg';
+		img.src=imageSrc;
 
 		this.size=Vec(1,1);
 
